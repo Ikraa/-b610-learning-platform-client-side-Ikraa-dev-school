@@ -1,17 +1,21 @@
 import { signOut } from "firebase/auth";
-import React from "react";
+import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../firebase.config";
 
 const Nav = () => {
     const [user,loading]=useAuthState(auth)
+    const [isDark,setIsDark]=useState(false)
     console.log(user)
     if(loading){
         return ;
     }
   const menuElement = (
     <>
+      <li>
+        <button className={`btn ${isDark?"bg-black text-white":"bg-white text-black"}`} onClick={()=>setIsDark(!isDark)}>{isDark?"Dark":"Light"}</button>
+      </li>
       <li>
         <Link to={"/"}>Home</Link>
       </li>
