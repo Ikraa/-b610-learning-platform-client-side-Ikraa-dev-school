@@ -1,9 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
+import Checkout from "./Componants/pages/Checkout/Checkout";
 import CourseDetails from "./Componants/pages/CourseDetails/CourseDetails";
 import Courses from "./Componants/pages/Courses/Courses";
 import Home from "./Componants/pages/Home/Home";
 import Login from "./Componants/pages/Login/Login";
+import PrivateRoute from "./Componants/pages/PriveteRoute/PrivateRoute";
 
 
 function App() {
@@ -23,6 +25,10 @@ function App() {
     {
       path: "/courses/:id",
       element: <CourseDetails />,
+    },
+    {
+      path: "/checkout",
+      element: <PrivateRoute><Checkout /></PrivateRoute>,
     },
   ]);
   return (
