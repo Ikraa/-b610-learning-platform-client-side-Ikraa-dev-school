@@ -6,13 +6,9 @@ const CourseDetails = () => {
   const { id } = useParams();
   const [course, setCourse] = useState({});
   useEffect(() => {
-    fetch("../Sidebar.json")
+    fetch(`https://dev-school-azure.vercel.app/courses/${id}`)
       .then((res) => res.json())
-      .then((data) => {
-        const singleData = data.find((item) => item.id === +id);
-        setCourse(singleData);
-        console.log(singleData);
-      });
+      .then((data) => setCourse(data));
   }, [id]);
   const navigate = useNavigate();
   return (

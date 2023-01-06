@@ -19,7 +19,8 @@ const Nav = () => {
         <Link to={"/courses"}>Course</Link>
       </li>
       <li>
-        <Link to={"/"}>Home</Link>
+        <Link to={"/blog"}>Blog</Link>
+        <Link to={"/faq"}>FAQ</Link>
       </li>
      {user?.email && <li data-tip={user?.displayName} className="flex items-center tooltip tooltip-bottom mr-[20px]">
         <img style={{borderRadius:"50%"}} className="  h-12 w-12 object-cover p-1 ml-4" src={user?.photoURL} alt="" />

@@ -1,12 +1,14 @@
 import React from 'react';
 import Nav from '../../Navbar/Nav';
 
-const FAQ = () => {
+const Blog = () => {
+
     return (
         <div>
             <Nav/>
+            this is blog
         </div>
     );
 };
 
-export default FAQ;
+export default Blog;
