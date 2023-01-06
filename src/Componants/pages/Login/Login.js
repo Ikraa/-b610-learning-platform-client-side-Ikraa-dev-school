@@ -21,7 +21,7 @@ const Login = () => {
   const [signInWithGithub, gituser, gitloading, giterror] =
     useSignInWithGithub(auth);
   const location = useLocation();
-  const form = location?.state?.from?.pathname;
+    const form = location?.state?.from?.pathname  || '/';
 
   console.log(location, "location");
   const [createUserWithEmailAndPassword, user, loading, error] =
