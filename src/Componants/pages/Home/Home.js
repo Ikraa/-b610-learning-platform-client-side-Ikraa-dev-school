@@ -10,12 +10,12 @@ class Home extends Component {
                 <header className='h-auto'>
 
                <Nav />
-               {/* <TopHeader /> */}
+               <TopHeader />
 
                 </header>
                 <main>
                     <section>
-                        <h1 className='text-3xl text-center text-black font-bold'>Our Online Courses</h1>
+                        {/* <h1 className='text-3xl text-center text-black font-bold'>Our Online Courses</h1> */}
                     </section>
                 </main>
             </div>
