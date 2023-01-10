@@ -3,7 +3,7 @@
 This is multipage application made with Reactjs, tailwind css, daisy ui firebase  and server made with mongoDb,expressJs etc..
 
 ## Live Site link:
-[Live site link] [https://dev-school-4b743.web.app/]
+[Live site link] (https://dev-school-4b743.web.app/)
 
 
 
